@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+wei = (n) => {
+if (n > 150) {
+return "obese";
+}
+if (n > 100 && n < 150) {
+return "ok";
+}
+if (n < 100) {
+return "under weight";
+}
+}
+let n = prompt("enter the number");
+n = n * 2.2;
+let res = wei(n);
+document.write(res);
+    </script>
+</body>
+</html>

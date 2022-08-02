@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = []
+	let set = new Set()
+	let res = ['kittu', 'kitty', 'krisna', 'krishna']
+	for (let item of res) {
+	    arr.push(item)
+	    set.add(item)
+	}
+	console.log(arr)
+	console.log(set)
+	console.time('arr')
+	res = arr.indexOf('krishna')
+	console.timeEnd('arr')
+	console.time('set')
+	res = set.has('krishna')
+	console.timeEnd('set')
+
+    </script>
+</body>
+</html>
